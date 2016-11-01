@@ -1,0 +1,37 @@
+.lineup {
+  margin: $gutter;
+
+  h2 {
+    width: 100%;
+    font-family: $condense-font;
+    font-size: 1.5rem;
+  }
+}
+
+.carousel-lineup {
+  margin: 1rem 0;
+  display: flex;
+
+  img {
+    width: 6rem;
+    height: 6rem;
+    background: $placeholder;
+    padding: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row nowrap;
+  }
+
+  i {
+    margin-top: 2.5rem;
+  }
+
+  a {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0);
+  }
+}
