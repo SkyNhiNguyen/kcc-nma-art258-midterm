@@ -25,6 +25,8 @@ $('.carousel-lineup').slick({
   prevArrow: '<i class="fa fa-arrow-left"></i>',
   dots: false,
   infinite: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
