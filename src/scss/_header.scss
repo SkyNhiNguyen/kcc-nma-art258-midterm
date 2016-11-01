@@ -1,0 +1,137 @@
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1rem $gutter;
+  background: rgba(51, 51, 51, 0.7);
+}
+
+.logo {
+  width: 74%;
+
+  img {
+    width: 6rem;
+  }
+}
+
+.mainnav ul {
+  display: none;
+  width: 26%;
+  float: right;
+  margin: 3rem 0;
+  text-align: right;
+
+  a {
+    font-family: $condense-font;
+    font-size: 1.025rem;
+    line-height: 3rem;
+    font-weight: lighter;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  a:hover,
+  a:active {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0.5rem 0;
+    transition-duration: 0.5s;
+  }
+
+  .search-icon:hover,
+  .search-icon:active {
+    border: none;
+  }
+}
+
+/* --------------NAV TOGGLE------------------ */
+
+.toggle-nav {
+  display: block;
+  height: 16px;
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: $gutter;
+}
+
+.toggle-nav:hover {
+  background: transparent;
+}
+
+.toggle-nav::before,
+.toggle-nav::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.toggle-nav::before {
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.toggle-nav::after {
+  top: 12px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-nav.active::before {
+  border: 0;
+  top: 12px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  transform: rotate(45deg);
+}
+
+.toggle-nav.active::after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: $max-mobile-width) {
+  .toggle-nav {
+    display: none;
+  }
+
+  .logo {
+    width: 50%;
+    align-self: center;
+
+    img {
+      width: 8rem;
+    }
+  }
+
+  .mainnav {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 0;
+
+      a {
+        font-size: 0.75rem;
+        line-height: normal;
+        padding: 0.5rem;
+      }
+
+      a:hover,
+      a:active {
+        border: 1px solid #fff;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
