@@ -96,6 +96,10 @@ header {
 }
 
 @media screen and (min-width: $max-mobile-width) {
+  header {
+    padding: 1rem $gutter-big;
+  }
+
   .toggle-nav {
     display: none;
   }

@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:300i,400,700');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 
+$gutter-big: 5%;
+$gutter: 1.5rem;
+$placeholder: #999;
+$transparent-dark: rgba(51, 51, 51, 0.5);
+
+$condense-font: 'Oswald', sans-serif;
+$copy-font: 'Prompt', sans-serif;
+
+/* Media Queries */
+$max-mobile-width: 700px;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,15 +22,11 @@ a {
   text-decoration: none;
 }
 
-$gutter: 1.5rem;
-$placeholder: #999;
-$transparent-dark: rgba(51, 51, 51, 0.5);
-
-$condense-font: 'Oswald', sans-serif;
-$copy-font: 'Prompt', sans-serif;
-
-/* Media Queries */
-$max-mobile-width: 700px;
+h2 {
+  font-family: $condense-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
 
 h1 {
   font-family: $copy-font;

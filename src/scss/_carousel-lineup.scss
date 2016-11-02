@@ -1,11 +1,5 @@
 .lineup {
   margin: $gutter;
-
-  h2 {
-    width: 100%;
-    font-family: $condense-font;
-    font-size: 1.5rem;
-  }
 }
 
 .carousel-lineup {
@@ -62,6 +56,10 @@
 }
 
 @media screen and (min-width: $max-mobile-width) {
+  .lineup {
+    margin: $gutter-big;
+  }
+
   .carousel-lineup {
     img {
       width: 12rem;
@@ -69,7 +67,12 @@
     }
 
     i {
+      font-size: 2rem;
       align-self: center;
+    }
+
+    p {
+      font-size: 1.25rem;
     }
   }
 }
