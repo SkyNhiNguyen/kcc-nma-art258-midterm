@@ -24,7 +24,7 @@ $('.carousel-lineup').slick({
   nextArrow: '<i class="fa  fa-angle-right"></i>',
   prevArrow: '<i class="fa  fa-angle-left"></i>',
   dots: false,
-  infinite: false,
+  infinite: true,
   autoplay: true,
   autoplaySpeed: 2000,
   speed: 300,
@@ -51,7 +51,7 @@ $('.carousel-lineup').slick({
       breakpoint: 1000,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
       }
     }
     // You can unslick at a given breakpoint now by adding:
