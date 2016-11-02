@@ -1,0 +1,44 @@
+.cta-1 {
+  width: 10rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $condense-font;
+  color: #fff;
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+.cta-1:hover {
+  background-color: $transparent-dark;
+}
+
+.feature-tag {
+  color: #000;
+}
+
+.feature-tag:hover {
+  color: $transparent-dark;
+}
+
+.news-tag {
+  line-height: 2rem;
+  color: $transparent-dark;
+}
+
+.news-tag:hover {
+  color: #333;
+}
+
+.read-more {
+  font-family: $condense-font;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: $transparent-dark;
+}
+
+.read-more:hover {
+  color: #333;
+}

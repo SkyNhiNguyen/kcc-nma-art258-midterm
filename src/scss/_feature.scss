@@ -1,0 +1,100 @@
+.feature {
+  display: flex;
+  margin: 2rem $gutter;
+  flex-flow: column;
+}
+
+.feature > .feature-tickets {
+  order: -1;
+}
+
+.feature-tickets {
+  margin: 1rem 0;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 300px;
+    background-color: $placeholder;
+  }
+
+  .cta-1 {
+    position: absolute;
+    justify-content: center;
+    margin: 0;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+.feature-news {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+
+  img {
+    width: 100%;
+    height: 200px;
+    background-color: $placeholder;
+  }
+}
+
+.article {
+  display: flex;
+  flex-flow: row wrap;
+
+  .news-tag {
+    width: 50%;
+  }
+
+  h4 {
+    line-height: 2rem;
+    color: $transparent-dark;
+  }
+
+  h4:hover {
+    color: #333;
+  }
+
+  h5 {
+    color: $transparent-dark;
+    line-height: 2rem;
+    width: 50%;
+    text-align: right;
+  }
+
+  h3 {
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (min-width: $max-mobile-width) {
+  .feature {
+    margin: 2rem $gutter-big;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .feature > .feature-tickets {
+    order: 1;
+  }
+
+  .feature-tickets {
+    width: 65%;
+
+    img {
+      height: 90%;
+    }
+
+    .cta-1 {
+      top: 60%;
+    }
+  }
+
+  .feature-news {
+    width: 30%;
+  }
+}

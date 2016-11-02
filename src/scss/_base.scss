@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Prompt:300i,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i,900');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 
-$gutter-big: 5%;
+$gutter-big: 7%;
 $gutter: 1.5rem;
-$placeholder: #999;
+$placeholder: #cdcdcd;
+$dark-placeholder: #999;
 $transparent-dark: rgba(51, 51, 51, 0.5);
-
 $condense-font: 'Oswald', sans-serif;
-$copy-font: 'Prompt', sans-serif;
+$copy-font: 'Lato', sans-serif;
 
 /* Media Queries */
 $max-mobile-width: 700px;
@@ -24,12 +24,44 @@ a {
 
 h2 {
   font-family: $condense-font;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 h1 {
   font-family: $copy-font;
   font-size: 2rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: $condense-font;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: $condense-font;
+  font-size: 0.8rem;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: $copy-font;
+  font-weight: 300;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+  font-family: $copy-font;
+}
+
+@media screen and (min-width: $max-mobile-width) {
+  h2 {
+    font-size: 1.75rem;
+  }
 }
