@@ -20,7 +20,7 @@ $(function() {
 
 
 // LINEUP CAROUSEL=====================
-$('.carousel-lineup').slick({
+$('.carousel').slick({
   nextArrow: '<i class="fa  fa-angle-right"></i>',
   prevArrow: '<i class="fa  fa-angle-left"></i>',
   dots: false,
