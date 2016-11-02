@@ -11,26 +11,48 @@
 .carousel-lineup {
   margin: 1.5rem 0;
   display: flex;
-
-  // .slick-list {
-  //   display: flex;
-  //   justify-content: center;
-  // }
+  width: 100%;
+  position: relative;
 
   img {
     width: 6rem;
     height: 6rem;
+    margin: auto;
     background: $placeholder;
-    padding: 0;
-    margin: 0.25rem;
   }
 
   i {
-    margin: 2.5rem 0.5rem;
+    padding: 2.5rem 0;
+  }
+
+  i:last-of-type {
+    padding-left: 0.5rem;
+  }
+
+  i:first-of-type {
+    padding-right: 0.5rem;
   }
 
   a {
-    color: rgba(255, 255, 255, 0);
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-family: $condense-font;
+      font-weight: lighter;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  a:hover {
+    p {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 
   button,
@@ -42,8 +64,8 @@
 @media screen and (min-width: $max-mobile-width) {
   .carousel-lineup {
     img {
-      width: 10rem;
-      height: 10rem;
+      width: 12rem;
+      height: 12rem;
     }
 
     i {
