@@ -73,7 +73,7 @@
 
 @media screen and (min-width: $max-mobile-width) {
   .feature-2 {
-    margin: 5% $gutter-big;
+    margin: $gutter-med $gutter-big;
     flex-flow: row nowrap;
     justify-content: space-between;
   }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 
 $gutter-big: 7%;
+$gutter-med: 5%;
 $gutter: 1.5rem;
 $placeholder: #cdcdcd;
 $dark-placeholder: #999;
@@ -59,6 +60,44 @@ h5 {
 p {
   font-size: 1rem;
   font-family: $copy-font;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+
+  i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    background-color: $transparent-dark;
+    border: none;
+    padding: 0 1rem;
+    font-family: $copy-font;
+  }
+
+  a {
+    border: 2px solid white;
+    padding: 0.25rem 0.5rem;
+    font-family: $condense-font;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (min-width: $max-mobile-width) {

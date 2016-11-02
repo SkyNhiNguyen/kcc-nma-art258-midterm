@@ -1,0 +1,65 @@
+.feature-connect {
+  margin: 1rem $gutter;
+  display: flex;
+  flex-flow: row wrap;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.social {
+  background: $placeholder;
+  width: 100%;
+  margin: $gutter 0;
+  padding: $gutter;
+
+  .social-links {
+    i {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
+}
+
+.newsletter {
+  background: $placeholder;
+  width: 100%;
+  margin: $gutter 0;
+  padding: $gutter;
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+
+  form {
+    margin: 0.5rem 0;
+
+    input {
+      width: 70%;
+    }
+
+    a {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-mobile-width) {
+  .feature-connect {
+    margin: $gutter-med $gutter-big;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .social {
+    width: 47%;
+  }
+
+  .newsletter {
+    width: 47%;
+  }
+}
