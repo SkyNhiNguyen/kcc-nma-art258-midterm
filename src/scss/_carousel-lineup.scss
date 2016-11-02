@@ -16,7 +16,9 @@
   }
 
   i {
-    padding: 2.5rem 0;
+    font-size: 2rem;
+    align-self: center;
+    color: $transparent-dark;
   }
 
   i:last-of-type {
@@ -67,7 +69,7 @@
     }
 
     i {
-      font-size: 2rem;
+      font-size: 2.5rem;
       align-self: center;
     }
 

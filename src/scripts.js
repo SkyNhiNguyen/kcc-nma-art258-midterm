@@ -21,8 +21,8 @@ $(function() {
 
 // LINEUP CAROUSEL=====================
 $('.carousel-lineup').slick({
-  nextArrow: '<i class="fa fa-arrow-right"></i>',
-  prevArrow: '<i class="fa fa-arrow-left"></i>',
+  nextArrow: '<i class="fa  fa-angle-right"></i>',
+  prevArrow: '<i class="fa  fa-angle-left"></i>',
   dots: false,
   infinite: false,
   autoplay: true,
