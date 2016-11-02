@@ -1,4 +1,4 @@
-.lineup {
+.feature-1 {
   margin: $gutter;
 }
 
@@ -62,8 +62,8 @@
 }
 
 @media screen and (min-width: $max-mobile-width) {
-  .lineup {
-    margin: $gutter-big;
+  .feature-1 {
+    margin: 5% $gutter-big;
   }
 
   .carousel-lineup {

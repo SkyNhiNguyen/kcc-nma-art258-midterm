@@ -1,10 +1,10 @@
-.feature {
+.feature-2 {
   display: flex;
   margin: 2rem $gutter;
   flex-flow: column;
 }
 
-.feature > .feature-tickets {
+.feature-2 > .feature-tickets {
   order: -1;
 }
 
@@ -72,13 +72,13 @@
 }
 
 @media screen and (min-width: $max-mobile-width) {
-  .feature {
-    margin: 2rem $gutter-big;
+  .feature-2 {
+    margin: 5% $gutter-big;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
 
-  .feature > .feature-tickets {
+  .feature-2 > .feature-tickets {
     order: 1;
   }
 

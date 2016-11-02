@@ -39,6 +39,7 @@ h3 {
   font-family: $condense-font;
   font-size: 1rem;
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 h4 {
@@ -63,5 +64,9 @@ p {
 @media screen and (min-width: $max-mobile-width) {
   h2 {
     font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
   }
 }

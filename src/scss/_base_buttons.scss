@@ -42,3 +42,13 @@
 .read-more:hover {
   color: #333;
 }
+
+.play-icon {
+  i {
+    color: #333;
+  }
+
+  i:hover {
+    color: $transparent-dark;
+  }
+}
