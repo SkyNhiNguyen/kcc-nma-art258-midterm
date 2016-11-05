@@ -25,6 +25,69 @@
   }
 }
 
+.schedule {
+  margin: 6rem $gutter;
+
+  h1 {
+    font-family: $condense-font;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem;
+  }
+
+  sup {
+    text-transform: lowercase;
+  }
+
+  img {
+    background: $placeholder;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  ul:last-child {
+    justify-content: space-between;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.time {
+  position: absolute;
+  align-self: flex-end;
+  padding-bottom: 1rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    letter-spacing: 5px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: $transparent-dark;
+  }
+}
+
 @media screen and (min-width: $max-mobile-width) {
   .lineup-promo {
     top: 67px;
