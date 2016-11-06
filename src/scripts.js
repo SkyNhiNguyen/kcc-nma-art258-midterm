@@ -35,7 +35,7 @@ $('.carousel').slick({
       breakpoint: 1800,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
       }
@@ -44,7 +44,7 @@ $('.carousel').slick({
       breakpoint: 1280,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 2,
       }
     },
     {
@@ -58,4 +58,25 @@ $('.carousel').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+});
+
+
+// sub nav//////////////////////////////////////////////////
+$('.schedule-tabs a').on('click', function() {
+  $(tab-daytime).hide();
+});
+  // $('.tabgroup > div:first-of-type').hide();
+  // $('.tabs a').click(function(e){
+  //   e.preventDefault();
+  //     var $this = $(this),
+  //         tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+  //         others = $this.closest('li').siblings().children('a'),
+  //         target = $this.attr('href');
+  //     others.removeClass('active');
+  //     $this.addClass('active');
+  //     $(tabgroup).children('div').hide();
+  //     $(target).show();
+  //
+  // })
+
 });

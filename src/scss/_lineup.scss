@@ -33,7 +33,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-    margin: 3rem;
+    margin: 3rem 0 2rem;
   }
 
   sup {
@@ -50,18 +50,17 @@
   ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
   }
 
-  ul:last-child {
-    justify-content: space-between;
-  }
+  // ul:last-child {
+  //   justify-content: space-between;
+  // }
 
   li {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
   }
 }
 
@@ -85,6 +84,32 @@
 
   a:hover {
     color: $transparent-dark;
+  }
+}
+
+.schedule-tabs {
+  background: $dark-placeholder;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  a {
+    color: #fff;
+    font-family: $copy-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem;
+    width: 50%;
+  }
+
+  a:hover {
+    color: $placeholder;
+  }
+
+  .active {
+    background: #333;
   }
 }
 
