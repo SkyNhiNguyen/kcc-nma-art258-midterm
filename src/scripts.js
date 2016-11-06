@@ -59,24 +59,3 @@ $('.carousel').slick({
     // instead of a settings object
   ]
 });
-
-
-// sub nav//////////////////////////////////////////////////
-$('.schedule-tabs a').on('click', function() {
-  $(tab-daytime).hide();
-});
-  // $('.tabgroup > div:first-of-type').hide();
-  // $('.tabs a').click(function(e){
-  //   e.preventDefault();
-  //     var $this = $(this),
-  //         tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-  //         others = $this.closest('li').siblings().children('a'),
-  //         target = $this.attr('href');
-  //     others.removeClass('active');
-  //     $this.addClass('active');
-  //     $(tabgroup).children('div').hide();
-  //     $(target).show();
-  //
-  // })
-
-});
