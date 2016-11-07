@@ -82,10 +82,11 @@
 
   h2 {
     margin-bottom: 0.5rem;
+    font-weight: lighter;
   }
 
   h3 {
-    letter-spacing: 5px;
+    letter-spacing: 2px;
   }
 
   a {
@@ -97,17 +98,21 @@
   }
 }
 
+.schedule-tabs {
+  background: $dark-placeholder;
+  margin: 1rem 0.5rem;
+}
+
 .tabs {
-  margin: 0.5rem;
   display: flex;
-  justify-content: space-between;
   text-align: center;
+  flex-flow: row nowrap;
+  justify-content: center;
 
   li {
-    width: 50%;
     margin: 0;
     height: auto;
-    background: $dark-placeholder;
+    background: none;
 
     a {
       color: #fff;
@@ -115,7 +120,6 @@
       text-transform: uppercase;
       font-weight: bold;
       font-size: 0.8rem;
-      width: 100%;
       padding: 1rem;
     }
   }
@@ -126,6 +130,7 @@
 
   .active {
     background: #333;
+    width: 100%;
   }
 }
 // --------------------------------------------
@@ -139,7 +144,6 @@
   color: #333;
   border: 2px solid #333;
   padding: 0.5rem;
-  margin: 0 0.5rem;
 }
 
 .notice {
@@ -159,9 +163,21 @@
     margin: 6rem $gutter-big;
 
     li {
-      flex: 12rem;
-      height: 12rem;
+      flex: 13rem;
+      height: 13rem;
       margin: 1rem;
+    }
+  }
+
+  .schedule-tabs {
+    width: 65%;
+    margin: 2rem auto;
+  }
+
+  .tabs {
+    li {
+      height: auto;
+      margin: 0;
     }
   }
 }
