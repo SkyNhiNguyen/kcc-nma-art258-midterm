@@ -98,6 +98,11 @@ form {
     color: #fff;
     text-transform: uppercase;
   }
+
+  a:hover {
+    color: #333;
+    border-color: #333;
+  }
 }
 
 @media screen and (min-width: $max-mobile-width) {
