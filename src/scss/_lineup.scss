@@ -97,21 +97,27 @@
   }
 }
 
-.schedule-tabs {
-  background: $dark-placeholder;
+.tabs {
   margin: 0.5rem;
   display: flex;
   justify-content: space-between;
   text-align: center;
 
-  a {
-    color: #fff;
-    font-family: $copy-font;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.8rem;
-    padding: 1rem 0.5rem;
+  li {
     width: 50%;
+    margin: 0;
+    height: auto;
+    background: $dark-placeholder;
+
+    a {
+      color: #fff;
+      font-family: $copy-font;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8rem;
+      width: 100%;
+      padding: 1rem;
+    }
   }
 
   a:hover {
