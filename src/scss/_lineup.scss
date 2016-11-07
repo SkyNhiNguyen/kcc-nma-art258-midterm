@@ -5,6 +5,11 @@
   display: flex;
   flex-flow: column;
 
+  .23rd {
+    display: flex;
+    justify-content: center;
+  }
+
   video {
     width: 100%;
     height: 300px;
@@ -24,7 +29,7 @@
     font-size: 3rem;
   }
 }
-
+// ====================SCHEDULE============================
 .schedule {
   margin: 6rem $gutter;
 
@@ -40,27 +45,32 @@
     text-transform: lowercase;
   }
 
-  img {
-    background: $placeholder;
-    width: 10rem;
-    height: 10rem;
-    position: relative;
-  }
+  // img {
+  //   background: $placeholder;
+  //   width: 8rem;
+  //   height: 8rem;
+  //   position: relative;
+  // }
 
   ul {
     display: flex;
     flex-flow: row wrap;
+    overflow: hidden;
   }
 
-  // ul:last-child {
-  //   justify-content: space-between;
-  // }
-
   li {
+    background: $placeholder;
+    flex: 10rem;
+    height: 10rem;
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 0.5rem;
+  }
+
+  li:empty {
+    height: 0;
+    border: none;
   }
 }
 
@@ -112,9 +122,37 @@
     background: #333;
   }
 }
+// --------------------------------------------
+
+.print-schedule {
+  font-size: 1.25rem;
+  font-family: $condense-font;
+  color: #333;
+  border: 2px solid #333;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.notice {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 10px;
+  margin: 2rem 0.5rem 0;
+}
+// =======================================
 
 @media screen and (min-width: $max-mobile-width) {
   .lineup-promo {
     top: 67px;
+  }
+
+  .schedule {
+    margin: 6rem $gutter-big;
+
+    li {
+      flex: 12rem;
+      height: 12rem;
+      margin: 1rem;
+    }
   }
 }
