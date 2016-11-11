@@ -77,6 +77,7 @@
 
   h2 {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
     font-weight: lighter;
   }
 
@@ -115,7 +116,7 @@
       text-transform: uppercase;
       font-weight: bold;
       font-size: 0.8rem;
-      padding: 1rem;
+      padding: 0.75rem;
     }
   }
 
@@ -164,21 +165,26 @@
     }
   }
 
+  .time {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
   .schedule-tabs {
     width: 70%;
     margin: 2rem auto;
   }
 
   .tabs {
-    ul {
-      display: flex;
-      flex-flow: row nowrap;
-    }
-
     li {
       width: 50%;
       height: auto;
       margin: 0;
+
+      a {
+        padding: 1rem;
+      }
     }
   }
 }
