@@ -509,9 +509,6 @@ header {
   top: 60px;
   display: flex;
   flex-flow: column; }
-  .lineup-promo .23rd {
-    display: flex;
-    justify-content: center; }
   .lineup-promo video {
     width: 100%;
     height: 300px;
@@ -542,8 +539,8 @@ header {
     overflow: hidden; }
   .schedule li {
     background: #cdcdcd;
-    flex: 10rem;
-    height: 10rem;
+    flex: 9rem;
+    height: 9rem;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -559,6 +556,7 @@ header {
   text-align: center; }
   .time h2 {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
     font-weight: lighter; }
   .time h3 {
     letter-spacing: 2px; }
@@ -586,7 +584,7 @@ header {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 0.8rem;
-      padding: 1rem; }
+      padding: 0.75rem; }
   .tabs a:hover {
     color: #cdcdcd; }
   .tabs .active {
@@ -618,12 +616,17 @@ header {
       flex: 13rem;
       height: 13rem;
       margin: 1rem; }
+  .time h2 {
+    font-size: 1.5rem; }
   .schedule-tabs {
-    width: 65%;
+    width: 70%;
     margin: 2rem auto; }
   .tabs li {
+    width: 50%;
     height: auto;
-    margin: 0; } }
+    margin: 0; }
+    .tabs li a {
+      padding: 1rem; } }
 
 .subpage-footer .social-links {
   background: #999; }
